@@ -27,22 +27,4 @@ export class MyDatabaseClassic {
       console.log(user);
     }
   }
-
-  consoleExample(): void {
-    console.log('hello');
-  }
 }
-
-const instance1 = MyDatabaseClassic.getInstance();
-const instance2 = MyDatabaseClassic.getInstance();
-
-instance1.add({
-  name: 'Hernande',
-  age: 24,
-});
-
-instance2.show();
-
-instance1.consoleExample();
-
-console.log(instance1 === instance2);
